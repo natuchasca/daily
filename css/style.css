@@ -617,6 +617,9 @@ img.icons-big {
 .fh5co-parallax {
   height: 500px;
 }
+.fh5co-parallax.register {
+  height: auto;
+}
 
 .fh5co-parallax {
   background-color: #555;
@@ -656,10 +659,11 @@ img.icons-big {
 }
 .fh5co-parallax .fh5co-intro p a {
   color: #fff;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  /*border-bottom: 2px solid rgba(255, 255, 255, 0.2);*/
 }
 .fh5co-parallax .fh5co-intro p a:hover {
   color: #fff;
+  text-decoration: none;
 }
 .fh5co-parallax .fh5co-intro.box-area {
   padding: 40px;
@@ -1114,7 +1118,31 @@ img.icons-big {
   border-color: #8cc30a;
   color: #8cc30a !important;
 }
-.btn:hover, .btn:active, .btn:focus,
+.btn.btn-primary-blank {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.btn.btn-primary-blank:hover, 
+.btn.btn-primary-blank:active, 
+.btn.btn-primary-blank:focus {
+  box-shadow: none;
+  background: #8cc30a;
+  border-color: #8cc30a;
+  color: white !important;
+}
+.btn.btn-primary-inverse {
+  background: transparent;
+  color: #8cc30a;
+  border: 2px solid #8cc30a !important;
+}
+.btn.btn-primary-inverse:hover, .btn.btn-primary-inverse:active, .btn.btn-primary-inverse:focus {
+  box-shadow: none;
+  background: white;
+  border-color: #8cc30a;
+  color: #8cc30a !important;
+}
+/*.btn:hover, .btn:active, .btn:focus,*/
 #footer #btn-submit:hover, #footer #btn-submit:active, #footer #btn-submit:focus {
   background: white !important;
   color: #8cc30a !important;
@@ -1654,6 +1682,22 @@ img.icons-big {
     font-size: 20px;
   }
 }
+
+.floreria-detail h2 {
+  color: white;
+  font-size: 40px;
+}
+.floreria-detail a {
+  color: white;
+}
+
+.team-section-grid .overlay-section p.fh5co-social-icons i:hover {
+  color: #8cc30a;
+}
+
+
+/* Inverse buttons */
+
 
 
 /*# sourceMappingURL=style.css.map */
